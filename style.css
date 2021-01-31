@@ -1,0 +1,55 @@
+body {
+  animation: colorchange 10s linear 1s infinite;
+  -webkit-animation: colorchange 10s linear 0s infinite alternate; /* Chrome and Safari */
+  background: black;
+}
+
+@keyframes colorchange
+{
+  0%   {color: cyan;}
+  33%  {color: magenta;}
+  66%  {color: yellow;}
+  100% {color: cyan;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {color: cyan;}
+  33%  {color: magenta;}
+  66%  {color: yellow;}
+  100% {color: cyan;}
+}
+
+.main {
+  text-align: center;
+  color: inherit;
+  opacity: 75%;
+  mix-blend-mode: difference;
+  font-family: Arial, sans-serif;
+}
+
+div {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4.69em;
+}
+
+p {
+  font-size: 1.6em;
+  font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+a {
+  color: inherit;
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 3.0em;
+  }
+  p {
+    font-size: 1.3em;
+  }
+}
